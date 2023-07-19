@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: main
+          uri: https://github.com/Georgui716371/configuracion-microserver
+          search-paths: config-data
+  application:
+    name: config-service
